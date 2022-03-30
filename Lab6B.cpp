@@ -92,6 +92,7 @@ int main()
     return 0;
 }
 
+//Remove last node in list 
 void pop_back(Node*& tail)
 {
     Node* temp = tail->prev;
@@ -100,6 +101,7 @@ void pop_back(Node*& tail)
     tail->next = nullptr;
 }
 
+//Remove first node in list
 void pop_front(Node*& head)
 {
     Node* temp = head->next;
@@ -108,6 +110,7 @@ void pop_front(Node*& head)
     head->prev = nullptr;
 }
 
+//Finds the size of the list 
 int size(Node* currentNode)
 {
     int count = 0;
